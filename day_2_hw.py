@@ -62,22 +62,22 @@ shopping_cart()
 # 2) Has a function to calculate the circumference of a circle
 # Program in Jupyter Notebook should take in user input and use imported functions to calculate a circle's circumference or a houses square footage
 
-# from math_functions import squareft_room, circumference
+from math_functions import squareft_room, circumference
 
-# def solve_for_room_or_circle():
-#     choices = ["ROOM", "CIRCLE"]
-#     choice = input("Would you like to solve the circumference of a circle, or the squarefootage of a room? room/circle: ").upper()
-#     solving = True
-#     if choice in choices:
-#         while solving:
-#             if choice == "ROOM":
-#                 length = int(input("What is the length?: "))
-#                 width = int(input("What is the width?: "))
-#                 return squareft_room(length, width)
-#             elif choice == "CIRCLE":
-#                 radius = int(input("What is the radius?: "))
-#                 return circumference(radius)
-#             solving = False
-#     else:
-#         print("That was not an option to choose from. Please try again.")
-# print(solve_for_room_or_circle())
+def solve_for_room_or_circle():
+    choices = ["ROOM", "CIRCLE"]
+    choice = input("Would you like to solve the circumference of a circle, or the squarefootage of a room? room/circle: ").upper()
+    solving = True
+    if choice in choices:
+        while solving:
+            if choice == "ROOM":
+                length = int(input("What is the length?: "))
+                width = int(input("What is the width?: "))
+                return squareft_room(length, width)
+            elif choice == "CIRCLE":
+                radius = int(input("What is the radius?: "))
+                return circumference(radius)
+            solving = False
+    else:
+        print("That was not an option to choose from. Please try again.")
+print(solve_for_room_or_circle())
